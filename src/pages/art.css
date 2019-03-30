@@ -1,5 +1,21 @@
+.hero {
+    height: 600px;
+    width: 100%;
+    background-color: #ccc; 
+    /* padding: 20px; */
+    position: relative; 
+}
 
+.hero h1 {
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+}
 
+.description {
+    padding: 20px;
+    text-align: center;
+}
 .grid {
     display: grid; 
     /* grid-template-columns: repeat(3, 1fr); */
@@ -15,10 +31,11 @@
     height: 100%; 
     display: inline-block;
     margin: 0;
-    transition: all .5s ease-in-out; 
-
-    animation-name: fadein;
-    animation-duration: 1s;
+    transition: all 1s ease-in-out; 
+    transform: translate(0, 50%);
+    opacity: 0;
+    /* animation-name: fadein; */
+    /* animation-duration: 2s; */
 }
 
 .grid-item:hover {
@@ -32,9 +49,13 @@
     margin-top: -50px; 
 }
 
+.active {
+    transform: translate(0);
+    opacity: 1;
+}
 
 
-@keyframes fadein {
+/* @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 1;}
-}
+} */

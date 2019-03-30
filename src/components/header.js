@@ -1,13 +1,37 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import './header.css'
+
+const onScroll = () => {
+	// const wh = window.innerHeight;
+	// console.log(wh); 
+	const headerElem = document.querySelector('.header'); 
+	console.log(headerElem); 
+
+
+	window.addEventListener('scroll', function(e) {
+
+		window.scrollY > 200 ? headerElem.classList.add('scrolled') : headerElem.classList.remove('scrolled')
+
+
+	})
+
+}
+
+setTimeout(() => {
+	
+	onScroll()
+}, 1000);
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+  <header className='header'
+    // style={{
+    //   background: `rebeccapurple`,
+    //   // marginBottom: `1.45rem`,
+    //   position: `fixed`, 
+    //   width: `100%`,
+    // }}
   >
     <div
       style={{
@@ -20,7 +44,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            // color: `white`,
             textDecoration: `none`,
           }}
         >

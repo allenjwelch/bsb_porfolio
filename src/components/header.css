@@ -1,0 +1,22 @@
+header {
+    background: transparent; 
+    position: fixed; 
+    width: 100%;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+
+
+header h1 a {
+    color: #fff; 
+    transition: all .5s ease-in-out;
+
+}
+
+header.scrolled h1 a {
+    color: #333; 
+}
+
+header.scrolled {
+    background: #fff; 
+}

@@ -33,23 +33,29 @@ const onScroll = () => {
 
 
     window.addEventListener('scroll', function(e) {
-        console.log('scrolling...')
+        // console.log('scrolling...')
         let scrollPos = window.scrollY + wh; 
         
-        console.log(scrollPos); 
+        // console.log('scrollPos: ' , scrollPos); 
         const imgTotal = document.querySelectorAll('img').length; 
         const imgElems = document.querySelectorAll('img'); 
-        console.log(imgElems); 
-        console.log(imgElems[0]); 
-        // for (i = 0; i < imgTotal; i++) {
-        //     if ()
-        // }
+        // console.log(imgElems); 
+        // console.log(imgElems[0]); 
+       
 
         imgElems.forEach( (img, i) => {
-            console.log('imgTopPos: ', img.offsetTop)
+            // console.log('imgTopPos: ', img.offsetTop)
 
-            if(img.offsetTop < wh) {
-                console.log('offscreen'); 
+            if(img.offsetTop < scrollPos) {
+                // console.log('ONscreen'); 
+                // img.style.opacity = 1; 
+                // img.style.transform = 1; 
+                img.classList.add('active'); 
+                // img.setAttribute('style', 'transform: translate(0, 20%)');
+            } else {
+                img.classList.remove('active'); 
+                // console.log('offscreen'); 
+
             }
             // if(img.offsetTop > 0) {
             //     console.log('gotit'); 
@@ -78,14 +84,21 @@ const replaceElem = () => {
 
 
 setTimeout(() => {
-    console.log(document.querySelector('[data-key="2"]')); 
+    // console.log(document.querySelector('[data-key="2"]')); 
     // replaceElem()
 }, 1000)
 
 const Art = () => (
     <Layout>
-        <h1>Art Page</h1>
-        <div className="grid">
+        <section className="hero">
+            <h1>Art...makes me happy</h1>
+        </section>
+
+        <section className="description">
+            <p>Say a little something here about art...</p>
+        </section>
+
+        <section className="grid">
 
             {
                 imgs.map((src, i)=> {
@@ -93,7 +106,7 @@ const Art = () => (
                 })
             }
             
-        </div>
+        </section>
         <Link to="/">Go back to the homepage</Link>
     </Layout>
 )
