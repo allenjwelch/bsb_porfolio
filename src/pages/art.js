@@ -1,7 +1,7 @@
 import React from 'react'; 
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import './art.css'; 
+import './css/art.css'; 
 
 const imgs = [
     'https://images.fineartamerica.com/images-medium-large-5/the-hiding-place-joshua-smith.jpg', 
@@ -90,24 +90,28 @@ setTimeout(() => {
 
 const Art = () => (
     <Layout>
-        <section className="hero">
-            <h1>Art...makes me happy</h1>
-        </section>
-
-        <section className="description">
-            <p>Say a little something here about art...</p>
-        </section>
-
-        <section className="grid">
-
-            {
-                imgs.map((src, i)=> {
-                    return <img key={i} data-key={i} className="grid-item" src={src} alt=""/>
-                })
-            }
+        <div className="art-page">
             
-        </section>
-        <Link to="/">Go back to the homepage</Link>
+            <section className="hero">
+                <h1>Art...makes me happy</h1>
+            </section>
+
+            <section className="description">
+                <p>Say a little something here about art...</p>
+            </section>
+
+            <section className="grid">
+
+                {
+                    imgs.map((src, i)=> {
+                        return <img key={i} data-key={i} className="grid-item" src={src} alt=""/>
+                    })
+                }
+                
+            </section>
+            <Link to="/">Go back to the homepage</Link>
+        
+        </div>
     </Layout>
 )
 
