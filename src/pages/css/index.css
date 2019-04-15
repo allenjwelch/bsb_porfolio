@@ -54,10 +54,14 @@ body {
     display: inline-block; 
     vertical-align: top;
     width: 45%;
+    max-width: 500px;
+
 }
 
 #life-chart {
     max-height: 400px;
+    max-width: 500px;
+
 }
 
 .home-page .followup-text p {

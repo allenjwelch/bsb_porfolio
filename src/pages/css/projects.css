@@ -1,0 +1,55 @@
+.projects-page .hero {
+    height: 500px;
+    width: 100%;
+    background-color: #ccc; 
+    position: relative; 
+}
+
+.project-tiles {
+    width: 90%;
+    height: 600px;
+    margin: -350px auto 100px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.project-tiles img {
+    width: 32%;
+    margin-bottom: 15px;
+}
+
+.projects-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project {
+    margin: 20px auto 100px;
+}
+
+.project-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+}
+
+.project-description {
+    display: inline-block; 
+    vertical-align: top;
+    width: 45%;
+    padding: 0 20px;
+}
+
+.project:nth-child(even) .project-description {
+    text-align: right;
+}
+
+.project-tags p {
+    display: inline-block; 
+    width: 33%; 
+    text-align:center; 
+}
+
