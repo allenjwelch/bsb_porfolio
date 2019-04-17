@@ -31,5 +31,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
   ],
-  pathPrefix: "https://github.com/allenjwelch/bsb_porfolio"
+  pathPrefix: "https://allenjwelch.github.io/bsb_porfolio"
 }
