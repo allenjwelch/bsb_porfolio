@@ -1,11 +1,6 @@
 const onScroll = () => {
     console.log('testing')
-    let wh; 
-    try {
-        wh = window.innerHeight;
-    } catch(e) {
-        console.log(e)
-    }
+    const wh = window.innerHeight;
     const headerElem = document.querySelector('.header'); 
     console.log(headerElem)
     

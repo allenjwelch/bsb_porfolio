@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { Component } from 'react'; 
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import './css/art.css'; 
@@ -23,45 +23,53 @@ import onScroll from '../js/scroll.js'
 // ]
 
 
-onScroll(); 
 
-const replaceElem = () => {
+// const replaceElem = () => {
 
-    // select the element that will be replaced
-    var el = document.querySelector('[data-key="4"]'); 
+//     // select the element that will be replaced
+//     var el = document.querySelector('[data-key="4"]'); 
     
-    // new element
-    var newEl = document.createElement('div');
-    newEl.innerHTML = '<p>Hello World!</p>';
+//     // new element
+//     var newEl = document.createElement('div');
+//     newEl.innerHTML = '<p>Hello World!</p>';
     
-    // replace el with newEL
-    el.parentNode.replaceChild(newEl, el);
+//     // replace el with newEL
+//     el.parentNode.replaceChild(newEl, el);
+// }
+
+
+class Art extends Component {
+
+    componentDidMount() {
+        onScroll(); 
+    }
+
+    render() {
+        return (
+            <Layout>
+                <div className="art-page">
+                    
+                    <section className="hero">
+                        <h1>Art...makes me happy</h1>
+                    </section>
+
+                    <section className="description">
+                        <p>Say a little something here about art...</p>
+                    </section>
+
+                    <section className="grid">
+
+                        {
+                            images.map((src, i)=> {
+                                return <img key={i} data-key={i} className="grid-item" src={src} alt=""/>
+                            })
+                        }
+                        
+                    </section>      
+                </div>
+            </Layout>
+        )
+    }
 }
-
-
-const Art = () => (
-    <Layout>
-        <div className="art-page">
-            
-            <section className="hero">
-                <h1>Art...makes me happy</h1>
-            </section>
-
-            <section className="description">
-                <p>Say a little something here about art...</p>
-            </section>
-
-            <section className="grid">
-
-                {
-                    images.map((src, i)=> {
-                        return <img key={i} data-key={i} className="grid-item" src={src} alt=""/>
-                    })
-                }
-                
-            </section>      
-        </div>
-    </Layout>
-)
 
 export default Art; 
