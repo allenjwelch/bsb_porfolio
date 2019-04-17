@@ -6,6 +6,20 @@ import images from '../../static/images/art/artList'
 import onScroll from '../../static/js/scroll.js'
 import { withPrefix } from 'gatsby'
 
+
+import l1 from '../rose.jpg'
+import c1 from '../the_dock.jpg'
+import r1 from '../outoftheflame.jpg'
+import l2 from '../lighthouse_staircase.jpg'
+import c2 from '../phoenix_rising.jpg'
+import r2 from '../aftermath1.jpg'
+import l3 from '../muscle_movement.jpg'
+import c3 from '../water_meets_the_sky.jpg'
+import r3 from '../rainbow_jesus.jpg'
+import l4 from '../spiral_up2.jpg'
+import c4 from '../self_portrait.png'
+import r4 from '../serenity_lake.jpg'
+
 // const imgs = [
 //     'https://images.fineartamerica.com/images-medium-large-5/the-hiding-place-joshua-smith.jpg', 
 //     'https://static.boredpanda.com/blog/wp-content/uploads/2015/11/pop-culture-characters-thrift-store-paintings-dave-pollot-1.jpg', 
@@ -42,12 +56,25 @@ class Art extends Component {
                     </section>
 
                     <section className="grid">
-
+{/* 
                         {
                             images.map((src, i)=> {
                                 return <img key={i} data-key={i} className="grid-item" src={src} alt=""/>
                             })
-                        }
+                        } */}
+
+                        <img src={l1} alt=""/>
+                        <img src={c1} alt=""/>
+                        <img src={r1} alt=""/>
+                        <img src={l2} alt=""/>
+                        <img src={c2} alt=""/>
+                        <img src={r2} alt=""/>
+                        <img src={l3} alt=""/>
+                        <img src={c3} alt=""/>
+                        <img src={r3} alt=""/>
+                        <img src={l4} alt=""/>
+                        <img src={c4} alt=""/>
+                        <img src={r4} alt=""/>
                         
                     </section>      
                 </div>

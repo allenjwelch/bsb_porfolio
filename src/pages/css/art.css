@@ -2,7 +2,7 @@
     height: 600px;
     width: 100%;
     background-color: #ccc; 
-    background: url('../../../static/images/art/center/morocco1.jpg');
+    background: url('../../images/morocco1.jpg');
     /* padding: 20px; */
     position: relative; 
 }
