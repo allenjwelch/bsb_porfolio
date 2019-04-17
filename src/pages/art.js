@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import './css/art.css'; 
-import images from '../images/art/artList'
-import onScroll from '../js/scroll.js'
-
+import images from '../../static/images/art/artList'
+import onScroll from '../../static/js/scroll.js'
+import { withPrefix } from 'gatsby'
 
 // const imgs = [
 //     'https://images.fineartamerica.com/images-medium-large-5/the-hiding-place-joshua-smith.jpg', 
@@ -22,26 +22,10 @@ import onScroll from '../js/scroll.js'
 //     'https://paintingcircle.com/images/home/paint2.jpg',
 // ]
 
-
-
-// const replaceElem = () => {
-
-//     // select the element that will be replaced
-//     var el = document.querySelector('[data-key="4"]'); 
-    
-//     // new element
-//     var newEl = document.createElement('div');
-//     newEl.innerHTML = '<p>Hello World!</p>';
-    
-//     // replace el with newEL
-//     el.parentNode.replaceChild(newEl, el);
-// }
-
-
 class Art extends Component {
 
     componentDidMount() {
-        onScroll(); 
+        onScroll()
     }
 
     render() {

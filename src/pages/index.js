@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Chart from 'chart.js';
 import './css/index.css'
-import onScroll from '../js/scroll.js'
+import onScroll from '../../static/js/scroll.js'
 
 class Home extends React.Component {
 

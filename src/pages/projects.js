@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import './css/projects.css'
-import onScroll from '../js/scroll.js'
+import onScroll from '../../static/js/scroll.js'
 
 
 class Projects extends Component {
