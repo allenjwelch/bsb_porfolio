@@ -14,13 +14,8 @@ const onScroll = () => {
         console.log(textLinks)
     }
     
-     //---- PROJECT SCROLL ----
+    //---- PROJECT SCROLL ----
     if(document.querySelector('.projects-page')) {
-        console.log('projects-page')
-        // document.getElementById('project1-tile').addEventListener('click', () => {
-        //     console.log('click')
-        // })
-
         let projects = document.querySelectorAll('.project-tile')
         projects.forEach(project => {
             project.addEventListener('click', function() {
@@ -28,19 +23,21 @@ const onScroll = () => {
                 console.log(projectDiv)
                 // projectDiv.scrollIntoView(false);
                 projectDiv.scrollIntoView({ block: "center", behavior: 'smooth' });
-
-
             })
-        })
-        
-        
+        })  
     }
     
     window.addEventListener('scroll', function(e) {
         let scrollPosLow = window.scrollY + (wh * .66); 
         let scrollPosCenter = window.scrollY + (wh /2); 
-        // console.log('scrollPosCenter: ', scrollPosCenter)
+        let scrollPosBottom = window.scrollY + wh; 
+        
+        // console.log('scrollPos: ' , scrollPos); 
+        // console.log(imgElems); 
+        // console.log(imgElems[0]); 
+       
 
+    
 
         //---- HEADER SCROLL ----
         window.scrollY > 200 ? document.querySelector('.header').classList.add('scrolled') : document.querySelector('.header').classList.remove('scrolled')
@@ -58,6 +55,22 @@ const onScroll = () => {
                 scrollPosLow >= kicker.offsetTop ? kicker.classList.add('scrolled') : kicker.classList.remove('scrolled'); 
             })
         }
+
+        //---- ART SCROLL ----
+        if(document.querySelector('.art-page')) {
+            const imgElems = document.querySelectorAll('img'); 
+
+            imgElems.forEach( (img, i) => {
+                if(img.offsetTop < scrollPosBottom) {
+                    // console.log('ONscreen'); 
+                    img.classList.add('active'); 
+                } else {
+                    img.classList.remove('active'); 
+                    // console.log('offscreen'); 
+                }
+            })  
+        }
+
 
     })
 }

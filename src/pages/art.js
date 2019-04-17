@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import './css/art.css'; 
 import images from '../images/art/artList'
+import onScroll from '../js/scroll.js'
+
 
 // const imgs = [
 //     'https://images.fineartamerica.com/images-medium-large-5/the-hiding-place-joshua-smith.jpg', 
@@ -20,38 +22,6 @@ import images from '../images/art/artList'
 //     'https://paintingcircle.com/images/home/paint2.jpg',
 // ]
 
-
-console.log(images)
-
-
-
-const onScroll = () => {
-    const wh = window.innerHeight;
-    console.log(wh); 
-
-
-    window.addEventListener('scroll', function(e) {
-        // console.log('scrolling...')
-        let scrollPos = window.scrollY + wh; 
-        
-        // console.log('scrollPos: ' , scrollPos); 
-        const imgTotal = document.querySelectorAll('img').length; 
-        const imgElems = document.querySelectorAll('img'); 
-        // console.log(imgElems); 
-        // console.log(imgElems[0]); 
-       
-
-        imgElems.forEach( (img, i) => {
-            if(img.offsetTop < scrollPos) {
-                // console.log('ONscreen'); 
-                img.classList.add('active'); 
-            } else {
-                img.classList.remove('active'); 
-                // console.log('offscreen'); 
-            }
-        })  
-    })
-}
 
 onScroll(); 
 
