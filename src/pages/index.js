@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 import Chart from 'chart.js';
 import './css/index.css'
@@ -12,20 +12,8 @@ class Home extends React.Component {
 
 	componentDidMount() {
 		this.chartjs()
-		// this.scroll() 
 		onScroll()
 	}
-
-	// scroll() {
-	// 	const wh = window.innerHeight;
-	// 	const headerElem = document.querySelector('.header'); 
-	// 	// console.log(wh); 
-	// 	// console.log(headerElem); 
-
-	// 	window.addEventListener('scroll', function(e) {
-	// 		window.scrollY > 200 ? headerElem.classList.add('scrolled') : headerElem.classList.remove('scrolled')
-	// 	})
-	// }
 
 	chartjs() {
 		const ctx = document.getElementById('life-chart');
@@ -99,14 +87,8 @@ class Home extends React.Component {
 						</section>
 					
 					</section>
-					
-
-
-					
-					
 				</div>
 			</Layout>
-
 		)
 	}
 }

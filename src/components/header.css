@@ -48,4 +48,20 @@ font-family: 'Noto Sans', sans-serif; */
     padding: 10px 10px; 
     font: 400 1rem 'Noto Sans', sans-serif;
     text-decoration: none;
+    transition: all .5s ease-in-out;
+    color: #fff;
 }
+
+.header.scrolled .header-links a {
+    color: #333;
+}
+
+.header .header-links a:hover {
+    color: rgb(245, 176, 230);
+}
+
+.header.scrolled .header-links a:hover {
+    color: rgb(121, 7, 96);
+
+}
+
