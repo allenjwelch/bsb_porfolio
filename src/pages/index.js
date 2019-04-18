@@ -6,13 +6,33 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Chart from 'chart.js';
 import './css/index.css'
-import onScroll from '../../static/js/scroll.js'
+// import onScroll from '../../static/js/scroll.js'
 
 class Home extends React.Component {
 
 	componentDidMount() {
 		this.chartjs()
-		onScroll()
+		this.homeScroll()
+	}
+
+	homeScroll() {
+		const wh = window.innerHeight;
+		let textLinks = document.querySelectorAll('.text-link'); 
+		let homeKickers = document.querySelectorAll('.kicker');  
+	
+		window.addEventListener('scroll', function(e) {
+			let scrollPosLow = window.scrollY + (wh * .66); 
+			let scrollPosCenter = window.scrollY + (wh /2); 
+			
+			textLinks.forEach( (link, i) => {
+                scrollPosCenter >= link.offsetTop ? link.classList.add('scrolled') : link.classList.remove('scrolled'); 
+            })
+
+            homeKickers.forEach( (kicker, i) => {
+                scrollPosLow >= kicker.offsetTop ? kicker.classList.add('scrolled') : kicker.classList.remove('scrolled'); 
+            })
+		})
+	
 	}
 
 	chartjs() {

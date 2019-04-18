@@ -8,7 +8,23 @@ import onScroll from '../../static/js/scroll.js'
 class Projects extends Component {
     
     componentDidMount() {
-        onScroll();
+        this.projectScroll();
+    }
+
+    projectScroll() {
+        const wh = window.innerHeight;
+        const projects = document.querySelectorAll('.project-tile')
+        projects.forEach(project => {
+            project.addEventListener('click', function() {
+                let projectDiv = document.querySelector(`.project[data-project="${this.dataset.project}"]`)
+                console.log(projectDiv)
+                // projectDiv.scrollIntoView(false);
+                projectDiv.scrollIntoView({ block: "center", behavior: 'smooth' });
+            })
+        })  
+
+
+
     }
 
     render() {
