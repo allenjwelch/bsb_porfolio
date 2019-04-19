@@ -2,11 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import Chart from 'chart.js';
 import './css/index.css'
-// import onScroll from '../../static/js/scroll.js'
 
 class Home extends React.Component {
 
@@ -32,11 +30,11 @@ class Home extends React.Component {
                 scrollPosLow >= kicker.offsetTop ? kicker.classList.add('scrolled') : kicker.classList.remove('scrolled'); 
             })
 		})
-	
 	}
 
 	chartjs() {
 		const ctx = document.getElementById('life-chart');
+		// eslint-disable-next-line
 		let doughnutChart = new Chart(ctx, {
 			type: "doughnut",
 			data: {

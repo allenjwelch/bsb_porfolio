@@ -2,34 +2,18 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import './header.css'
-// import onScroll from '../../static/js/scroll.js'
-
 
 class Header extends React.Component {
-// const Header = ({ siteTitle }) => (
 	componentDidMount() {
 		this.headerScroll()
 	}
 
-	// onScroll = () => {
-	// 	const wh = window.innerHeight;
-	// 	const headerElem = document.querySelector('.header'); 
-	// 	// console.log(wh); 
-	// 	// console.log(headerElem); 
-
-	// 	window.addEventListener('scroll', function(e) {
-	// 		window.scrollY > 200 ? headerElem.classList.add('scrolled') : headerElem.classList.remove('scrolled')
-	// 	})
-	// }
-
 	headerScroll() {
-		const wh = window.innerHeight;
 		const headerElem = document.querySelector('.header'); 
 		
 		window.addEventListener('scroll', function(e) {
 			window.scrollY > 200 ? headerElem.classList.add('scrolled') : headerElem.classList.remove('scrolled')
 		})
-	
 	}
 
 	render() {
@@ -42,7 +26,6 @@ class Header extends React.Component {
 						{this.props.siteTitle}
 						</Link>
 					</h1>
-
 
 					<div className="header-links">
 						<Link to="/projects/">Projects</Link>

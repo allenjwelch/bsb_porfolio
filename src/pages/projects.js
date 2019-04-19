@@ -1,9 +1,6 @@
 import React, { Component } from 'react'; 
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import './css/projects.css'
-import onScroll from '../../static/js/scroll.js'
-
 
 class Projects extends Component {
     
@@ -12,7 +9,6 @@ class Projects extends Component {
     }
 
     projectScroll() {
-        const wh = window.innerHeight;
         const projects = document.querySelectorAll('.project-tile')
         projects.forEach(project => {
             project.addEventListener('click', function() {
@@ -22,9 +18,6 @@ class Projects extends Component {
                 projectDiv.scrollIntoView({ block: "center", behavior: 'smooth' });
             })
         })  
-
-
-
     }
 
     render() {
