@@ -215,3 +215,13 @@ body {
 
     }
 }
+
+@media (max-width: 450px) {
+    .home-page .followup-text .chart {
+        width: 90%;
+    }
+
+    .home-page .skill-badges {
+        margin: 50px auto;
+    }
+}
