@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import './header.css'
+import './header.scss'
 
 class Header extends React.Component {
 	componentDidMount() {
@@ -9,8 +9,8 @@ class Header extends React.Component {
 	}
 
 	headerScroll() {
-		const headerElem = document.querySelector('.header'); 
-		
+		const headerElem = document.querySelector('.header');
+
 		window.addEventListener('scroll', function(e) {
 			window.scrollY > 200 ? headerElem.classList.add('scrolled') : headerElem.classList.remove('scrolled')
 		})

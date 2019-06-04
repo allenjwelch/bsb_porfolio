@@ -1,0 +1,241 @@
+.qoins-page {
+    background: #1F97FF;
+
+    // .hero {
+    //     height: 200px;
+    //     width: 100%;
+    //     background-color: #ccc;
+    //     position: relative;
+    // }
+
+    .slides {
+        padding: 100px 0;
+        text-align: center;
+
+        .slide {
+            height: 600px;
+            width: 100%;
+            // width: 800px;
+            margin: 50px auto;
+
+            .container {
+                width: 800px;
+                height: 600px;
+                margin: 0 auto;
+                position: relative;
+            }
+        }
+
+        .spacer {
+            background: #fff;
+            height: 100px;
+            width: 100%;
+        }
+
+        .slide1 {
+            .container {
+                background: url('../../images/qoins/title1.png') no-repeat center;
+
+                .team {
+                    width: 400px;
+                    height: 215px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+                    h1 {
+                        margin: 10px auto 20px;
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                    .member {
+                        display: inline-block;
+                        width: 33%;
+
+
+                        img {
+                            margin: 0;
+                        }
+
+                        p {
+                            width: 75%;
+                            margin: 0 auto;
+                            font-weight: 700;
+                            color: #fff;
+                        };
+                    }
+                }
+            }
+        }
+
+        .slide2 {
+            background: #fff;
+            .container {
+                background-image: url('../../images/qoins/title2.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                .text1 {
+                    position: absolute;
+                    top: 60px;
+                    right: 75px;
+                    width: 300px;
+                    padding: 20px;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.3;
+                        color: #fff;
+                    }
+                }
+
+                .text2 {
+                    position: absolute;
+                    bottom: 40px;
+                    right: 11px;
+                    background: url('../../images/qoins/img1.png') no-repeat 40% 35%;
+                    height: 200px;
+                    width: 400px;
+                    padding: 15px 20px;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 1.1;
+                    }
+                }
+            }
+            // width: 100vw;
+            // margin: 0 -200px;
+        }
+
+        .slide3 {
+            .container {
+                background: url('../../images/qoins/title3.png') no-repeat center;
+                .text1 {
+                    background: #fff;
+                    height: 420px;
+                    width: 345px;
+                    position: absolute;
+                    top: 80px;
+                    left: 50px;
+                    border-radius: 20px;
+                    padding: 20px;
+
+                    p {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .slide4 {
+            .container {
+                background: url('../../images/qoins/title4.png') no-repeat center;
+
+            }
+        }
+
+        .slide5 {
+            background: #fff;
+            .container {
+                background-image: url('../../images/qoins/title5.png');
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+        }
+
+        .slide6 {
+            .container {
+
+            }
+        }
+
+        .slide7 {
+            .container {
+
+            }
+        }
+
+        .slide8 {
+            .container {
+                background: url('../../images/qoins/title6.png') no-repeat center;
+
+            }
+        }
+
+        .slide9 {
+            background: #8FCCFF;
+            .container {
+                background: url('../../images/qoins/title7.png') no-repeat center;
+
+            }
+        }
+
+        .slide10 {
+            background: #fff;
+            .container {
+                background-image: url('../../images/qoins/title8.png');
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+        }
+
+        .slide11 {
+            .container {
+                // background: url('../../images/qoins/title9.png') no-repeat center;
+                img {
+                    border-bottom: 70px solid #fff;
+                    border-left: 70px solid #fff;
+                    border-right: 70px solid #fff;
+                }
+
+            }
+        }
+
+        .slide12 {
+            background: #fff;
+            .container {
+                background-image: url('../../images/qoins/title10.png');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .slide13 {
+            .container {
+
+            }
+            background: url('../../images/qoins/title11.png') no-repeat center;
+        }
+
+        .slide14 {
+            background: #fff;
+            .container {
+                background-image: url('../../images/qoins/title12.png');
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+        }
+
+        .slide15 {
+            .container {
+
+                background: url('../../images/qoins/title13.png') no-repeat center;
+            }
+        }
+
+        .slide16 {
+            background: #fff;
+            .container {
+                background: url('../../images/qoins/title14.png') no-repeat center;
+            }
+        }
+    }
+}
