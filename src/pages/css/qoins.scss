@@ -135,7 +135,22 @@
         .slide4 {
             .container {
                 background: url('../../images/qoins/title4.png') no-repeat center;
+                .text1 {
+                    position: absolute; 
+                    top: 170px; 
+                    left: 50px;
+                    text-align: left;
+                    h3 {
+                        color: #fff; 
+                        margin: 5px 0 0;
 
+                    }
+
+                    p {
+                        margin: 0;
+                        color: #fff;
+                    }
+                }
             }
         }
 
@@ -144,35 +159,168 @@
             .container {
                 background-image: url('../../images/qoins/title5.png');
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: 50% 70%;
+                .text1 {
+                    text-align: left;
+                    position: absolute; 
+                    top: 20px; 
+                    left: 0; 
+                    right: 0; 
+                    margin: 0 auto;
+                    h1 {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
 
+                    ul {
+                        list-style: none; 
+                        display: inline-block;
+                        margin-left: 100px;
+                        li {
+                            margin: 0;
+                            font-weight: 700;
+
+                            &:nth-child(2) {
+                                padding-left: 20px;
+                            }
+
+                            &:nth-child(3) {
+                                padding-left: 40px;
+                            }
+
+                            &:nth-child(4) {
+                                padding-left: 60px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
         .slide6 {
             .container {
+                padding-top: 100px;
+                .text1, img {
+                    display: inline-block; 
+                    vertical-align: top;
+                }
 
+                .text1 {
+                    width: 40%;
+                    text-align: left;
+
+                    h1 {
+                        color: #fff; 
+                    }
+
+                    p {
+                        margin: 0 0 15px;
+                        font-weight: 700;
+                    }
+
+                    ul {
+                        list-style: none; 
+                        margin: 0 0 20px;
+                        li {
+                            margin: 0;
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                img {
+                    width: 55%;
+                    margin-left: 10px;
+                }
             }
         }
 
         .slide7 {
             .container {
+                // padding-top: 100px;
+                .text1, .images {
+                    display: inline-block; 
+                    vertical-align: top;
+                }
 
+                .text1 {
+                    width: 40%;
+                    text-align: left;
+
+                    h1 {
+                        color: #fff; 
+                    }
+
+                    p {
+                        margin: 0 0 15px;
+                        font-weight: 700;
+                    }
+
+                    ul {
+                        // list-style: none; 
+                        margin: 0 0 20px;
+                        li {
+                            margin: 0;
+                            // font-style: italic;
+                        }
+                    }
+                }
+
+                .images {
+                    width: 55%;
+                    margin-left: 10px;
+                }
             }
         }
 
         .slide8 {
+            .text1 {
+                background: #fff; 
+                padding: 5px;
+                margin: 0 auto;
+                h1, p {
+                    display: inline-block; 
+                    vertical-align: top;
+                    margin: 0;
+                    text-align: left; 
+                }
+                h1{
+                    width: auto;
+                    margin-right: 30px;
+                }
+                p {
+                    width: 70%;
+                    font-weight: 700;
+                }
+            }
+            
             .container {
                 background: url('../../images/qoins/title6.png') no-repeat center;
-
+                
             }
         }
 
         .slide9 {
             background: #8FCCFF;
             .container {
-                background: url('../../images/qoins/title7.png') no-repeat center;
+                background: url('../../images/qoins/title11.png') no-repeat center;
+                // h1 {
+                //     color: #fff; 
+                //     position: absolute; 
+                //     top: 50px; 
+                //     left: 0; 
+                //     right: 0; 
+                //     margin: 0 auto; 
+                // }
 
+                // .text1 {
+                //     position: absolute; 
+                //     bottom: 50px; 
+                //     left: 0; 
+                //     text-align: left; 
+                //     color: #333; 
+                //     width: 500px;
+                // }
             }
         }
 
@@ -182,7 +330,29 @@
                 background-image: url('../../images/qoins/title8.png');
                 background-repeat: no-repeat;
                 background-position: center;
+                h4 {
+                    margin: 0;
+                    padding: 10px;
+                    text-align: left; 
+                }
 
+                .text1 {
+                    position: absolute; 
+                    left: 20px; 
+                    top: 80px; 
+                    width: 350px;
+                    border-radius: 18px;
+                    padding: 10px;
+                    text-align: left; 
+                    background: rgba(204, 204, 204, 0.719);
+                    ul {
+                        // list-style-type: none;
+                        li {
+                            margin: 0 0 10px;
+                            font-weight: 700;
+                        }
+                    }
+                }
             }
         }
 
@@ -209,17 +379,27 @@
 
         .slide13 {
             .container {
-
+                .text1 {
+                    p {
+                        color: #fff;
+                    }
+                }
             }
-            background: url('../../images/qoins/title11.png') no-repeat center;
+            background: url('../../images/qoins/title7.png') no-repeat center;
         }
 
         .slide14 {
             background: #fff;
+            padding: 50px 0;
+            height: 700px;
             .container {
                 background-image: url('../../images/qoins/title12.png');
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: 50% 90%;
+
+                h1 {
+                    margin-top: -20px;
+                }
 
             }
         }
@@ -228,13 +408,34 @@
             .container {
 
                 background: url('../../images/qoins/title13.png') no-repeat center;
+                h1 {
+                    color: #fff;
+                }
             }
         }
 
         .slide16 {
             background: #fff;
             .container {
-                background: url('../../images/qoins/title14.png') no-repeat center;
+                background: url('../../images/qoins/title14.png') no-repeat;
+                background-position: 100% 50%;
+
+                .text1 {
+                    position: absolute; 
+                    top: 100px; 
+                    left: 0;
+                    width: 250px;
+                    text-align: left;
+                    ul {
+                        list-style-type: none;
+                        margin: 0;
+                        li {
+                            margin: 0 0 10px;
+                            font-weight: 700;
+                            
+                        }
+                    }
+                }
             }
         }
     }

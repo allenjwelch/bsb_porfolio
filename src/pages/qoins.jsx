@@ -136,22 +136,22 @@ const Qoins = () => (
                 </div>
 
                 <div className="slide slide8">
+                    <div className="text1">
+                        <h1>Persona</h1>
+                        <p>Based on the information gathered in our interviews, and Qoins target audience, we were able to create our persona</p>
+                    </div>
                     <div className="container">
-                        <div className="text1">
-                            <h1>Persona</h1>
-                            <p>Based on the information gathered in our interviews, and Qoins target audience, we were able to create our persona</p>
-                        </div>
                     </div>
 
                 </div>
 
                 <div className="slide slide9">
                     <div className="container">
-                        <h1>Qoins Existing User Flow</h1>
+                        {/* <h1>Qoins Existing User Flow</h1>
 
                         <div className="text1">
                             <p>Users must navigate through 20 Qoins screens, in addition to between 5-10 more screens depending on their funding source, for the onboarding process to reach the home screen</p>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -172,7 +172,7 @@ const Qoins = () => (
 
                 <div className="slide slide11">
                     <div className="container">
-                        <h1>With affinity mapping, we synthesized the qualitative data gathered during usability testing</h1>
+                        <h2>With affinity mapping, we synthesized the qualitative data gathered during usability testing</h2>
                         <img src={infinityMap} alt=""/>
 
                     </div>
