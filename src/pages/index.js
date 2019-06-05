@@ -53,7 +53,9 @@ class Home extends React.Component {
 						</section>
 
 						<section className="intro-text">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ratione, tempora nisi perspiciatis illum officia fugiat explicabo, voluptatum sunt corporis similique deserunt accusantium itaque sed rerum et quidem? Fuga delectus quaerat qui iure quae laudantium provident maxime nam dignissimos. Animi <Link className="text-link" to="/projects/">projects</Link> saepe, magnam consequatur repudiandae illum eligendi, est corrupti dolores rerum modi vitae similique sapiente quod non laudantium omnis ullam iste molestiae at tenetur mollitia veniam. Accusamus corporis eius alias architecto sunt, maiores doloribus maxime officiis, nihil ducimus eos suscipit doloremque cumque voluptatum inventore quidem mollitia labore necessitatibus cum culpa? Iste voluptate minus, quos dignissimos earum atque tempora obcaecati minima.</p>
+							<p>I'm an emerging UX Designer passionate about people, proficient with research, with a creative mind and spirit, and an eye for detail ready to create beautiful experiences. I'm pretty great at research including competative audits, user interviews based on demographics, synthesizing qualitative and quantitative data, and using all that information to start getting down to the beautiful design of an awesome product and experience. An artist at heart with a customer service background, I bring the dynamic combination of creativity and understanding to the design process of the user’s experience. See my latest <Link className="text-link" to="/projects/">projects</Link> and how I might be able to help your team on your next venture.</p>
+
+
 						</section>
 
 

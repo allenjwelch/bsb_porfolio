@@ -50,7 +50,7 @@ class Art extends Component {
                     </section>
 
                     <section className="description">
-                        <p>Say a little something here about art...</p>
+                        {/* <p>Say a little something here about art...</p> */}
                     </section>
 
                     <section className="grid">

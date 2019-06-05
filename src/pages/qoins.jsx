@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import './css/qoins.scss'
 
 import infinityMap from '../images/qoins/title9.png'
