@@ -15,8 +15,13 @@ import img6 from '../images/recycleatl/img6.png'
 import img7 from '../images/recycleatl/img7.png'
 import img8 from '../images/recycleatl/img8.png'
 import img9 from '../images/recycleatl/img9.png'
+import img10 from '../images/recycleatl/img10.png'
+import img11 from '../images/recycleatl/img11.png'
+import img12 from '../images/recycleatl/img12.png'
+import img13 from '../images/recycleatl/img13.png'
 import logo from '../images/recycleatl/logo.png'
 import logo2 from '../images/recycleatl/logo2.png'
+import logo3 from '../images/recycleatl/logo3.png'
 import photo1 from '../images/recycleatl/photo1.png'
 import photo2 from '../images/recycleatl/photo2.png'
 import photo3 from '../images/recycleatl/photo3.png'
@@ -41,7 +46,7 @@ const Recycle = () => (
                         </div>
                         <div className="r">
                             <div className="contain">
-                                <img src={logo2} alt=""/>
+                                <img src={logo3} alt=""/>
                                 <p>Recycle ATL is a mobile application designed to locate recycling drop-off locations and offers educational articles on environmental issues</p>
 
                             </div>
@@ -56,7 +61,7 @@ const Recycle = () => (
                                 <img src={photo1} alt=""/>
                             </div>
                             <div className="r">
-                                <img className="logo" src={logo2} alt=""/>
+                                <img className="logo" src={logo3} alt=""/>
                                 <img src={img2} alt=""/>
                             </div>
                         </div>
@@ -152,24 +157,29 @@ const Recycle = () => (
                 <div className="slide slide5">
                     <div className="container">
                         <h3 className="section-heading">Affinity Mapping & Synthesis</h3>
-                        <img src={flow2} alt=""/>
-                        <div className="text1">
-                            <p>Reasons for not recycling include:</p>
-                            <ul>
-                                <li>Inconvenient</li>
-                                <li>Doesn’t know where to recycle</li>
-                                <li>Doesn’t think about it</li>
-                            </ul>
+                        <div className="images">
+                            <img src={flow2} alt=""/>
                         </div>
-                        <div className="text2">
-                            <p>Reasons for recycling include:</p>
-                            <ul>
-                                <li>Good for the environment</li>
-                                <li>Keeps trash out of landfills</li>
-                                <li>They feel it’s their responsibility</li>
-                                <li>It’s part of their everyday life</li>
-                                <li>Believes in saving the planet</li>
-                            </ul>
+                        <div className="contain">
+                            <div className="text1">
+                                <p>Reasons for not recycling include:</p>
+                                <ul>
+                                    <li>Inconvenient</li>
+                                    <li>Doesn’t know where to recycle</li>
+                                    <li>Doesn’t think about it</li>
+                                </ul>
+                            </div>
+                            <div className="text2">
+                                <p>Reasons for recycling include:</p>
+                                <ul>
+                                    <li>Good for the environment</li>
+                                    <li>Keeps trash out of landfills</li>
+                                    <li>They feel it’s their responsibility</li>
+                                    <li>It’s part of their everyday life</li>
+                                    <li>Believes in saving the planet</li>
+                                </ul>
+                            </div>
+
                         </div>
                         <div className="text3">
                             <p>From the findings from sythensis, I came up with our persona, with his pain points and needs</p>
@@ -179,7 +189,7 @@ const Recycle = () => (
                                     <img src={photo4} alt=""/>
                                     <div className="textbox">
                                         <ul>
-                                            <li>Max Hartwell</li>
+                                            <li className="tite">Max Hartwell</li>
                                             <li>35 years old</li>
                                             <li>IT Support</li>
                                             <li>Lives near The Battery</li>
@@ -192,7 +202,7 @@ const Recycle = () => (
                                         <p>He’s frustrated with the lack of information on what is recyclable and where to take them. He feels guilty that he still chooses Bud Lite in the bottle, even though he now knows glass is not recyclable in ATL </p>
                                     </div>
                                     <div className="textbox">
-                                        <p>Goals:</p>
+                                        <p className="tite">Goals:</p>
                                         <ul>
                                             <li>Know more about recycling</li>
                                             <li>Find out where to take glass</li>
@@ -200,7 +210,7 @@ const Recycle = () => (
                                         </ul>
                                     </div>
                                     <div className="textbox">
-                                        <p>Pain Points:</p>
+                                        <p className="tite">Pain Points:</p>
                                         <ul>
                                             <li>Lack of information</li>
                                             <li>Doesn’t know where to take recycles</li>
@@ -232,7 +242,8 @@ const Recycle = () => (
                     <div className="container">
                         <h3 className="section-heading">Wireframes</h3>
                         <div className="wireframes">
-                            <img src={img6} alt=""/>
+                            <img src={img10} alt=""/>
+                            <img className="bottomImg" src={img11} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -252,9 +263,9 @@ const Recycle = () => (
                 <div className="slide slide8">
                     <div className="container">
                         <h3 className="section-heading">Final Mockups</h3>
-                        <img src={img7} alt=""/>
-                        <img src={img8} alt=""/>
-                        <img src={img9} alt=""/>
+                        <img src={img12} alt=""/>
+                        <img src={img13} alt=""/>
+                        {/* <img src={img9} alt=""/> */}
                     </div>
                 </div>
                 <div className="slide slide9">
@@ -265,7 +276,7 @@ const Recycle = () => (
                             <li>Check-In to drop-off locations for points</li>
                             <li>Recycle pick up like UBER for recycling</li>
                         </ul>
-                        <img src={logo2} alt=""/>
+                        <img src={logo3} alt=""/>
                     </div>
                 </div>
 
